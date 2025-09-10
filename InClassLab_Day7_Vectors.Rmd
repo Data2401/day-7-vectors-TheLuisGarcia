@@ -62,7 +62,8 @@ first_nums <- 40:50
 next_nums<- seq(51,60)
 combined <- c(first_nums, next_nums)
 combined[-4:-18]
-combined[c(1:3, (length(combined)-2):length(combined))]
+last3 <- length(combined)-2
+combined[c(1:3, last3:length(combined))]
 ```
 
 ## In Class Activity
